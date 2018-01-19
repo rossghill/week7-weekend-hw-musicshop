@@ -16,4 +16,9 @@ public class CowbellTest {
     public void hasMaterial() {
         assertEquals("Brass", cowbell.getMaterial());
     }
+
+    @Test
+    public void canPlay() {
+        assertEquals("CLANK CLANK", cowbell.play());
+    }
 }

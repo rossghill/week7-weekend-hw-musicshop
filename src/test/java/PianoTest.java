@@ -22,4 +22,9 @@ public class PianoTest {
         assertEquals("Mini Grand", piano.getType());
     }
 
+    @Test
+    public void canPlay() {
+        assertEquals("TINKLING OF KEYS", piano.play());
+    }
+
 }

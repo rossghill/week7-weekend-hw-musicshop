@@ -29,4 +29,9 @@ public class GuitarTest {
         assertEquals("rosewood", fenderStrat.getMaterial());
     }
 
+    @Test
+    public void canPlay() {
+        assertEquals("RIFFFFFFFS", fenderStrat.play());
+    }
+
 }

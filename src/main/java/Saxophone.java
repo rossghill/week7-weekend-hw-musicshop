@@ -6,8 +6,8 @@ public class Saxophone implements IPlayable{
         this.type = type;
     }
 
-    public void play(String sound) {
-
+    public String play() {
+        return "SOUND OF SWING MUSIC BEING PLAYED";
     }
 
     public String getType() {

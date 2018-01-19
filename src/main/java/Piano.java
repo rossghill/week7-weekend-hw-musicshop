@@ -8,8 +8,8 @@ public class Piano implements IPlayable{
         this.type = type;
     }
 
-    public void play(String sound) {
-
+    public String play() {
+        return "TINKLING OF KEYS";
     }
 
     public int getKeys() {

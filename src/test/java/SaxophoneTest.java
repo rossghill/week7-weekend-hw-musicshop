@@ -5,15 +5,20 @@ import static org.junit.Assert.assertEquals;
 
 public class SaxophoneTest {
 
-    Saxophone saxophone;
+    Saxophone sax;
 
     @Before
     public void before() {
-        saxophone = new Saxophone("Tenor");
+        sax = new Saxophone("Tenor");
     }
 
     @Test
     public void hasType() {
-        assertEquals("Tenor", saxophone.getType());
+        assertEquals("Tenor", sax.getType());
+    }
+
+    @Test
+    public void canPlay() {
+        assertEquals("SOUND OF SWING MUSIC BEING PLAYED", sax.play());
     }
 }

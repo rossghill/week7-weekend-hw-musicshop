@@ -6,8 +6,8 @@ public class Cowbell implements IPlayable {
         this.material = material;
     }
 
-    public void play(String sound) {
-
+    public String play() {
+        return "CLANK CLANK";
     }
 
     public String getMaterial() {

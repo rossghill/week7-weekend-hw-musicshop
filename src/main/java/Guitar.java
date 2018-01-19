@@ -11,8 +11,8 @@ public class Guitar implements IPlayable{
 
     }
 
-    public void play(String sound) {
-
+    public String play() {
+        return "RIFFFFFFFS";
     }
 
     public int getNoOfStrings() {
