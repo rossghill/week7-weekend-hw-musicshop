@@ -1,4 +1,4 @@
-public class Guitar {
+public class Guitar implements IPlayable{
 
     private int no_of_strings;
     private int pickups;
@@ -8,6 +8,10 @@ public class Guitar {
         this.no_of_strings = no_of_strings;
         this.pickups = pickups;
         this.fretboard_material = fretboard_material;
+
+    }
+
+    public void play(String sound) {
 
     }
 }
