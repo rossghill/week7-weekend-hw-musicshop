@@ -9,4 +9,8 @@ public class Saxophone implements IPlayable{
     public void play(String sound) {
 
     }
+
+    public String getType() {
+        return type;
+    }
 }

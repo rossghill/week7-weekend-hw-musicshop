@@ -14,4 +14,16 @@ public class Guitar implements IPlayable{
     public void play(String sound) {
 
     }
+
+    public int getNoOfStrings() {
+        return no_of_strings;
+    }
+
+    public int getNoOfPickups() {
+        return pickups;
+    }
+
+    public String getMaterial() {
+        return fretboard_material;
+    }
 }

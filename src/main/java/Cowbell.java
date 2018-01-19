@@ -9,4 +9,8 @@ public class Cowbell implements IPlayable {
     public void play(String sound) {
 
     }
+
+    public String getMaterial() {
+        return material;
+    }
 }

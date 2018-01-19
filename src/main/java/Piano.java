@@ -11,4 +11,12 @@ public class Piano implements IPlayable{
     public void play(String sound) {
 
     }
+
+    public int getKeys() {
+        return no_of_keys;
+    }
+
+    public String getType() {
+        return type;
+    }
 }

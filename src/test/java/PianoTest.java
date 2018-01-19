@@ -1,4 +1,7 @@
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class PianoTest {
 
@@ -6,7 +9,17 @@ public class PianoTest {
 
     @Before
     public void before() {
+        piano = new Piano(88, "Mini Grand");
+    }
 
+    @Test
+    public void hasKeys() {
+        assertEquals(88, piano.getKeys());
+    }
+
+    @Test
+    public void hasType() {
+        assertEquals("Mini Grand", piano.getType());
     }
 
 }
