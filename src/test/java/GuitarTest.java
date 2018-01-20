@@ -30,6 +30,16 @@ public class GuitarTest {
     }
 
     @Test
+    public void hasColour() {
+        assertEquals("red", gibsonSG.getColour());
+    }
+
+    @Test
+    public void hasNeighbourAnnoyanceLevel() {
+        assertEquals(10, fenderStrat.getNeighbour_annoyance_level());
+    }
+
+    @Test
     public void canPlay() {
         assertEquals("RIFFFFFFFS", fenderStrat.play());
     }
