@@ -10,8 +10,8 @@ public class GuitarTest {
 
     @Before
     public void before() {
-        fenderStrat = new Guitar(6,2, "rosewood");
-        gibsonSG = new Guitar(6,3, "pine");
+        fenderStrat = new Guitar("sunburst", 10,6,2, "rosewood");
+        gibsonSG = new Guitar("red",10,6,3, "pine");
     }
 
     @Test
@@ -33,5 +33,7 @@ public class GuitarTest {
     public void canPlay() {
         assertEquals("RIFFFFFFFS", fenderStrat.play());
     }
+
+
 
 }

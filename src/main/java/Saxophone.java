@@ -1,8 +1,9 @@
-public class Saxophone implements IPlayable{
+public class Saxophone  extends Instrument implements IPlayable{
 
     String type;
 
-    public Saxophone(String type) {
+    public Saxophone(String colour, int neighbour_annoyance_level, String type) {
+        super(colour, neighbour_annoyance_level);
         this.type = type;
     }
 

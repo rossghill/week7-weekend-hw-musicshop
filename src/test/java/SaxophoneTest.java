@@ -9,7 +9,7 @@ public class SaxophoneTest {
 
     @Before
     public void before() {
-        sax = new Saxophone("Tenor");
+        sax = new Saxophone("gold",8,"Tenor");
     }
 
     @Test
