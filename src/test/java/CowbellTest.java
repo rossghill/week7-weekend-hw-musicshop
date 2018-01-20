@@ -9,7 +9,7 @@ public class CowbellTest {
 
     @Before
     public void before() {
-        cowbell = new Cowbell("copper",7,"Brass");
+        cowbell = new Cowbell("copper",7,"Brass", 18.00, 24.00);
     }
 
     @Test
