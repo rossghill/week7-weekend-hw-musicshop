@@ -2,7 +2,7 @@ import Accessories.ISell;
 
 import java.util.ArrayList;
 
-public class Shop<ISell> {
+public class Shop<ISell> implements Accessories.ISell{
 
     ArrayList<ISell> stock;
 
@@ -12,6 +12,25 @@ public class Shop<ISell> {
 
     public int stockCount() {
         return stock.size();
+    }
+
+    public void addItem(ISell stockItem) {
+        this.stock.add(stockItem);
+    }
+
+    @Override
+    public double getBuyingPrice() {
+        return 0;
+    }
+
+    @Override
+    public double getSellingPrice() {
+        return 0;
+    }
+
+    @Override
+    public double calculateMarkup() {
+        return 0;
     }
 
 //    public double getTotalProfit() {
