@@ -10,6 +10,10 @@ public class Shop<ISell> {
     this.stock = new ArrayList<>();
     }
 
+    public int stockCount() {
+        return stock.size();
+    }
+
 //    public double getTotalProfit() {
 //
 //    }
