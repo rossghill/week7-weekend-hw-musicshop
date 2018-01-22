@@ -18,17 +18,18 @@ public class Shop<ISell> implements Accessories.ISell{
         this.stock.add(stockItem);
     }
 
-    @Override
+    public void removeItems() {
+        this.stock.clear();
+    }
+
     public double getBuyingPrice() {
         return 0;
     }
 
-    @Override
     public double getSellingPrice() {
         return 0;
     }
 
-    @Override
     public double calculateMarkup() {
         return 0;
     }

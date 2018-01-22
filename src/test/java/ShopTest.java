@@ -30,4 +30,17 @@ public class ShopTest {
         assertEquals(1, stock.stockCount());
     }
 
+    @Test
+    public void removeFromStock() {
+        stock.addItem(drumsticks);
+        stock.removeItems();
+        assertEquals(0, stock.stockCount());
+    }
+
+//    @Test
+//    public void calculateProfit() {
+//        stock.addItem(drumsticks);
+//        assertEquals(1.50, stock.calculateMarkup(), 0.01);
+//    }
+
 }
